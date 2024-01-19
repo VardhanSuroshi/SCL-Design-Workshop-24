@@ -7,7 +7,7 @@ Welcome to the Standard Cell Design Workshop repository. Here, you'll find all t
 
 ## Workshop Flow
 
-![Workshop Flow](https://github.com/VardhanSuroshi/SCL_Workshop_24/assets/132068498/95d610c6-3cab-4664-870e-0087694cadf2)
+![SCL_tool_flow](https://github.com/VardhanSuroshi/SCL_Workshop_24/assets/132068498/6e3db959-403e-4afe-a491-928cb756a272)
 
 ## Table of Contents
 1. [Day 1](#day-1)
