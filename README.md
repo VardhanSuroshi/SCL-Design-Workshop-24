@@ -9,7 +9,7 @@ This is a repo that hosts the files and resources needed for the Standard cell d
 
 # Workshop Flow
 
-![toolflow](https://github.com/VardhanSuroshi/SCL_Workshop_24/assets/132068498/70b14b01-7ac6-4c6e-93ce-f91de1849c8b)
+![tool_flow_full](https://github.com/VardhanSuroshi/SCL_Workshop_24/assets/132068498/95d610c6-3cab-4664-870e-0087694cadf2)
 
 
 
