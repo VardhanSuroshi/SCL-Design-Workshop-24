@@ -51,11 +51,11 @@ Do the following simulation and report the following values:
     - Wp and Wn values for which symmetrical DC Curve
     - Noise Margin: VOH, VOL, VIL, VIH
 
-# Functional Simulation 
+## Functional Simulation 
 
 The aim is to Simulate a simple design (e.g., counter, mux) using Cadence nclaunch. The design and testbench files are present in the files directory.
 
-# Synthesis
+## Synthesis
 
 The aim is to Synthesize your design using gpdk45 technology with Cadence Genus. The TCL script used for synthesis is present in the files directory.
 
@@ -64,6 +64,7 @@ The aim is to Synthesize your design using gpdk45 technology with Cadence Genus.
 # Day 2: 
 
 ## Standard Cell Design Rules
+{ work in progress }
 
 ## Characterization - Liberty File Creation
 
@@ -130,6 +131,7 @@ Save the netlist as a "SCL.scs" file.
 
 
 ## Abstraction - LEF File Creation
+{ work in progress }
 
 
 # Acknowledgment
