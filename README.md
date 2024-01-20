@@ -96,7 +96,7 @@ Save the netlist as a "SCL.scs" file.
 
 - Use the provided `fixed.pl` Perl script to extract individual cell netlists from the combined .scs file:
   ```bash
-  fixed.pl < combined_netlist.scs
+  fixed.pl < SCL.scs
   ```
 - Copy the list of extracted cell names.
 
