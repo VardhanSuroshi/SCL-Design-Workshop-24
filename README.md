@@ -6,8 +6,8 @@
 Welcome to the Standard Cell Design Workshop repository. Here, you'll find all the necessary files and resources for a hands-on learning experience.
 
 # Workshop Flow
+![tool_flow_pes](https://github.com/VardhanSuroshi/SCL_Workshop_24/assets/132068498/75a8856c-177e-48ac-b1ce-04c5df35a486)
 
-![SCL_tool_flow](https://github.com/VardhanSuroshi/SCL_Workshop_24/assets/132068498/6e3db959-403e-4afe-a491-928cb756a272)
 
 ## Table of Contents
 1. [Day 1](#day-1)
