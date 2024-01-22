@@ -3,7 +3,7 @@
 module MUX2X1(A,B,S,Z);
 input A,B, S;
 output Z;
-wire temp1, temp2;
+//wire temp1, temp2;
 
 /*
 not n0(Sb,S);
