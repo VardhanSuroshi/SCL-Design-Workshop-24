@@ -69,13 +69,13 @@ The aim is to Synthesize your design using gpdk45 technology with Cadence Genus.
 Refer to the lecture slides to understand standard cell design rules. 
 
 ## Characterization - Liberty File Creation
-Details of characterisation steps can be found in the characterisation directory 
+Details of characterisation steps can be found in the characterisation [directory](https://github.com/VardhanSuroshi/SCL-Design-Workshop-24/tree/main/characterization) 
 
 ## Abstraction - LEF File Creation
-{ work in progress }
+
 
 ### In this Stage we look into the following 
-- Understand the need of .lef file
+- Understand the need of a .lef file
 - Overview of .lef file
 - Generate  .lef file using Virtuoso and Abstract Generator tools
 - Post-processing .lef file
