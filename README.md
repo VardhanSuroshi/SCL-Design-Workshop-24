@@ -11,7 +11,7 @@ Welcome to the Standard Cell Design Workshop repository. Here, you'll find all t
 
 ## Table of Contents
 1. [Day 1](#day-1)
-   - [Introduction to VLSI Design Flow Cell](#introduction-to-vlsi-design-flow)
+   - [Introduction to VLSI Design Flow](#introduction-to-vlsi-design-flow)
    - [Schematic Design](#schematic-design)
      - [Design](#design)
      - [Simulation](#simulation)
