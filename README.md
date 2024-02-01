@@ -11,14 +11,23 @@ Welcome to the Standard Cell Design Workshop repository. Here, you'll find all t
 
 ## Table of Contents
 1. [Day 1](#day-1)
+   - [Introduction to VLSI Design Flow Cell](#introduction-to-vlsi-design-flow)
    - [Schematic Design](#schematic-design)
      - [Design](#design)
      - [Simulation](#simulation)
+     - [Analysis](#analysis)
    - [Functional Simulation](#functional-simulation)
    - [Synthesis](#synthesis)
+
+
+
 2. [Day 2](#day-2)
-   - [Introduction to Standard Cell Design Flow](#introduction-to-standard-cell-design-flow)
    - [Standard Cell Design Rules](#standard-cell-design-rules)
+   - [Standard Cell Design](#standard-cell-design)
+      - [Layout Design](#layout-design)
+      - [Physical Verification - DRC, LVS & RCX](#physical-verification-drc-lvs-&-rcx)
+      - [Post Layout Simulation](#post-layout-simulation)
+      - [Analysis](#analysis) 
    - [Characterization - Liberty File Creation](#characterization-liberty-file-creation)
    - [Abstraction - LEF File Creation](#abstraction-lef-file-creation)
    - [Synthesis](#synthesis)
@@ -28,6 +37,8 @@ Welcome to the Standard Cell Design Workshop repository. Here, you'll find all t
 
 
 # Day 1 
+## Introduction to VLSI Design Flow
+Refer to the lecture slides to understand the VLSI design flow. 
 
 ## Schematic Design 
 ### Design 
@@ -69,6 +80,25 @@ The aim is to Synthesize your design using gpdk45 technology with Cadence Genus.
 
 ## Standard Cell Design Rules
 Refer to the lecture slides to understand standard cell design rules. 
+
+## Standard Cell Design
+Refer to the lab explanation video to design the layout using Cadence Layout XL
+
+### Layout Design
+
+### Physical Verification - DRC, LVS & RCX
+Refer to the lab explanation video to do physical verification of the layout using Cadence Assura and Quantus
+
+### Post-Layout Simulation
+Refer to the lab explanation video to conduct the post-layout simulation. 
+
+### Analysis 
+
+Do this post-layout simulation and report the following values:
+    - Power
+    - Delay: Tpd, Tpdf, Tpdr
+    - Noise Margin: VOH, VOL, VIL, VIH
+Compare the results of pre and post-layout simulation.
 
 ## Characterization - Liberty File Creation
 Details of characterisation steps can be found in the characterisation [directory](https://github.com/VardhanSuroshi/SCL-Design-Workshop-24/tree/main/characterization) 
