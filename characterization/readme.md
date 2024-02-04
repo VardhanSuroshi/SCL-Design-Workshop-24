@@ -1,5 +1,8 @@
 # Characterization of standard cells using Cadence Liberate:
 
+
+For AV instruction follow the steps mentioned in this [video](https://youtu.be/vOu4RwzyXCE?feature=shared) to complete the characterisation process. 
+
 ## **1. Prepare the Netlist:**
 
 - In Virtuoso, create a schematic containing instances of all cells to be characterized.
@@ -8,7 +11,7 @@
 - Ensure the simulator is set to Spectre in the Setup Environment.
        ![image](https://github.com/VardhanSuroshi/SCL_Workshop_24/assets/132068498/586e100f-4c24-4d51-a03c-59fc327a32fb)
 
-- Prefix the switch view list with "av_extractor" in the Setup Environment.
+- Prefix the switch view list with "av_extracted" in the Setup Environment.
   ![image](https://github.com/VardhanSuroshi/SCL_Workshop_24/assets/132068498/c9f92033-3dc4-4c14-9593-9f75be6112da)
 
 - Generate a netlist using Netlist -> Create. 
@@ -20,12 +23,17 @@ Save the netlist as a "SCL.scs" file.
 
 ![image](https://github.com/VardhanSuroshi/SCL_Workshop_24/assets/132068498/56c18754-7dbf-4956-82a8-625d6f6e7a97)
 
+
+### Note:
+Before we begin with the next step. Please download the [characterize.tgz](https://github.com/VardhanSuroshi/SCL-Design-Workshop-24/blob/main/characterization/characterize.tgz) file in your local directory. 
+
+Open a new terminal and untar your file using the command  ``tar cvfz characterize.tgz``.
   
 
 ## **2. Extract and Modify Individual Cell Netlists:**
 
-- Use the provided `fixed.pl` Perl script to extract individual cell netlists from the combined .scs file:
-  ```bash
+- Use the provided `fixed.pl` Perl script to extract individual cell netlists from the combined SCL.scs file:
+  ```
   fixed.pl < SCL.scs
   ```
 - Copy the list of extracted cell names.
@@ -41,7 +49,7 @@ Save the netlist as a "SCL.scs" file.
 
 - In the `areas.txt` file, list each cell's name and area (measured from layout).
 - Use the provided Perl script to generate user data files:
-  ```bash
+  ```
   perl areas_to_user_data.pl < areas.txt
   ```
 
@@ -50,8 +58,8 @@ Save the netlist as a "SCL.scs" file.
 - Check the `char.tcl` file for accuracy in file paths, voltages, temperatures, process corners, and references to the template and cell list.
 - Set up the Liberate environment (source the appropriate setup script).
 - Run the characterization script:
-  ```bash
-  liberate -f char.tcl
+  ```
+  liberate char.tcl
   ```
 
 ## **6. Review Results:**
@@ -59,5 +67,5 @@ Save the netlist as a "SCL.scs" file.
 - Liberate will create a characterized library (.ccs and .ccsm files) and a datasheet.
 - Verify the accuracy of the characterization results.
 
-Additionally, for AV instruction watch this [video](https://youtu.be/vOu4RwzyXCE?feature=shared) to complete the characterisation process. 
+
 
