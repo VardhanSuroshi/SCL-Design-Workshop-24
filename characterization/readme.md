@@ -59,4 +59,5 @@ Save the netlist as a "SCL.scs" file.
 - Liberate will create a characterized library (.ccs and .ccsm files) and a datasheet.
 - Verify the accuracy of the characterization results.
 
+Additionally, for AV instruction watch this [video](https://youtu.be/vOu4RwzyXCE?feature=shared) to complete the characterisation process. 
 
