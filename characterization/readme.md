@@ -25,9 +25,9 @@ Save the netlist as a "SCL.scs" file.
 
 
 ### Note:
-Before we begin with the next step. Please download the [characterize.tgz](https://github.com/VardhanSuroshi/SCL-Design-Workshop-24/blob/main/characterization/characterize.tgz) file in your local directory. 
-
-Open a new terminal and untar your file using the command  ``tar cvfz characterize.tgz``.
+- Before we begin with the next step. Please download the [characterize.zip](https://github.com/VardhanSuroshi/SCL-Design-Workshop-24/blob/main/characterization/characterize.zip) file in your local directory. 
+- unzip your file.
+- Copy the SCL.scs file and paste it into the characterize directory.
   
 
 ## **2. Extract and Modify Individual Cell Netlists:**
@@ -42,7 +42,6 @@ Open a new terminal and untar your file using the command  ``tar cvfz characteri
 
 - Edit the `templates/template.tcl` file:
   - Paste the copied cell names into the `cells_list` variable.
-  - Adjust settings like `max_transition` and `voltage_list` as needed.
   - Modify the `create_lib_cell` commands to match your cell names and pins.
 
 ## **4. Prepare Cell Area Data:**
@@ -55,8 +54,20 @@ Open a new terminal and untar your file using the command  ``tar cvfz characteri
 
 ## **5. Verify and Run Characterization Script:**
 
-- Check the `char.tcl` file for accuracy in file paths, voltages, temperatures, process corners, and references to the template and cell list.
-- Set up the Liberate environment (source the appropriate setup script).
+- Now open a new terminal window inside your **characterize directory**
+- invoke the cadence tools using the cshrc script:
+    ```
+    csh
+    source /home/installs/cshrc
+    ```
+- check if the liberate tool is installed on your machine
+  ```
+  liberate -v
+  ```
+  **Note:**
+  - a successful query will show the path in which the liberate tool is installed.
+  - If you get commands not found, then please check if cshrc file has the path to the correct version of liberate tool installed on your machine.
+
 - Run the characterization script:
   ```
   liberate char.tcl
@@ -65,6 +76,7 @@ Open a new terminal and untar your file using the command  ``tar cvfz characteri
 ## **6. Review Results:**
 
 - Liberate will create a characterized library (.ccs and .ccsm files) and a datasheet.
+- In the datasheet library you will have the list of all the cell that have been characterized
 - Verify the accuracy of the characterization results.
 
 
